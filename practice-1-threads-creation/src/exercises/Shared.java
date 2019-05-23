@@ -1,7 +1,5 @@
 package exercises;
 
-import java.util.Random;
-
 public class Shared {
 
 	private int counter;
