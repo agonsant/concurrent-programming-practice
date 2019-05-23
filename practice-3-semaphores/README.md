@@ -18,7 +18,7 @@ Existen procesos de dos tipos diferentes:
 
 La comunicación entre productores y consumidores se realizará través de un “almacén” compartido por todos los procesos. La interfaz de Almacen es:
 
-´´´java
+```java
 
 public interface Almacen {
 /**
@@ -35,7 +35,7 @@ public void almacenar(Producto producto);
 public Producto extraer();
 }
 
-´´´
+```
 En este apartado el tama˜no del almacén es uno, es decir puede haber almacenado como máximo un producto. Si un proceso quiere almacenar debe esperar hasta que el almacén esté libre y si un proceso quiere extraer espera hasta que haya un producto.
 Para valorar si el problema está bien resuelto, el objetivo es asegurar:
 
